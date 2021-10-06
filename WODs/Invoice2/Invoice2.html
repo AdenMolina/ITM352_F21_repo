@@ -1,10 +1,10 @@
-<script>
+ <script>
     /*
     This is a file that creates an invoice that calculates totals and tax
     */
     // Product 1
     var item1 = 'Gillette Sensor 3 Razor';
-     var quantity1 = 2;
+     var quantity1 = 50;
      var price1 = 1.23;
 
       // Product 2
@@ -40,7 +40,24 @@
     //tax rate
     var tax_rate = 0.0575;
     var tax_amount = tax_rate*subtotal;
-    var total = subtotal + tax_amount;
+
+    // Compute Shipping
+
+    if(subtotal <=50){
+      shipping = 2;
+    }
+    else if (subtotal <=100){
+      shipping = 5;
+    }
+    else {
+      shipping = 0.05*subtotal;
+    }
+
+    
+    //total 
+    var total = subtotal + tax_amount + shipping;
+
+    
 
 
 </script>
@@ -107,8 +124,12 @@
             <td width="54%">\$${subtotal.toFixed(2)}</td>
           </tr>
           <tr>
-            <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Tax @ 5.75%</span></td>
+            <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Tax @ ${tax_rate*100} %</span></td>
             <td width="54%">\$${tax_amount.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Shipping</span></td>
+            <td width="54%">\$${shipping.toFixed(2)}</td>
           </tr>
         
           <tr>
