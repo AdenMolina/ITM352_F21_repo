@@ -1,4 +1,4 @@
-var attributes  =  "<name>;<age>;<major>";
+attributes  =  "<name>;<age>;<age + 0.5>;<0.5 - age>" ;
 
 var pieces = attributes.split(";");
 
