@@ -1,0 +1,48 @@
+[
+    {
+        "brand":"Onitsuka Ultimate 81 EX",
+        "price":130, 
+        "image":"/images/tiger.jpg",
+        "type":"Onitsuka Tiger",
+        "quantity": 10
+        
+        
+    },
+    {
+        "brand":"Nike Air Monarch IV",
+        "price":70, 
+        "image":"/images/nike.jpg",
+        "type":"Nike",
+        "quantity": 9
+        
+        
+    }, 
+    {
+        "brand":"Teva Universal Sandal",
+        "price":50, 
+        "image":"/images/teva.jpg",
+        "type":"Teva",
+        "quantity": 30
+        
+        
+    },
+    {
+        "brand":"Adidas Continental 80",
+        "price":60, 
+        "image":"/images/adidas.jpg",
+        "type":"Adidas",
+        "quantity": 15
+        
+        
+    },
+    {
+        "brand":"Nodaleto Bulla Babies ",
+        "price":745, 
+        "image":"/images/nodaleto.jpg",
+        "type":"nodaleto",
+        "quantity": 5
+        
+        
+    }
+
+]
